@@ -1,10 +1,10 @@
 from stats import count_words, count_characters
 
-def main():
-    def get_book_text():
+def get_book_text():
        with open("books/frankenstein.txt", encoding="utf-8", newline="") as book:
             return book.read()
 
+def main():
     book_string = get_book_text()
 
     print(f"Found {count_words(book_string)} total words")
